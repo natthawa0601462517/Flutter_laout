@@ -6,7 +6,7 @@ class MyHomeScrren2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: Colors.deepPurple[200],
       appBar: AppBar(
         title: const Text('Screen2'),
       ),
@@ -14,11 +14,41 @@ class MyHomeScrren2 extends StatelessWidget {
         child: Container(
           height: 300,
           width: 300,
-          color:Colors.greenAccent ,
-          padding: EdgeInsets.symmetric(
-          vertical:50,
-          horizontal: 25,
-           ),
+          decoration: BoxDecoration(
+            color: Colors.red[200],
+            borderRadius: BorderRadius.circular(50),
+          ),
+          padding:  EdgeInsets.all(25),
+          child: Center(
+            child:Column(
+              children: [
+                Text('Natthawat',
+                style: TextStyle(
+                  fontSize: 50,
+                  color: Colors.yellowAccent,
+                  fontWeight: FontWeight.bold,
+                ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.star_border_purple500,
+                    color: Colors.black,
+                    size: 65,
+                    ),
+                    Icon(Icons.star_border_purple500,
+                    color: Colors.black,
+                    size: 45,
+                    ),
+                    Icon(Icons.star_border_purple500,
+                    color: Colors.black,
+                    size: 25,
+                    ),
+                  ],
+                )
+              ],
+            ) ,
+            ),
         ),
       ),
     );
