@@ -6,7 +6,7 @@ class MyHomeScrren2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple[200],
+      backgroundColor: Colors.deepPurpleAccent[100],
       appBar: AppBar(
         title: const Text('Screen2'),
       ),
@@ -15,7 +15,7 @@ class MyHomeScrren2 extends StatelessWidget {
           height: 300,
           width: 300,
           decoration: BoxDecoration(
-            color: Colors.red[200],
+            color: Colors.redAccent,
             borderRadius: BorderRadius.circular(50),
           ),
           padding:  EdgeInsets.all(25),

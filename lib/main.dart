@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_layout/MyHomeScreen_v1.dart';
 import 'package:flutter_layout/MyScreen2.dart';
+import 'package:flutter_layout/MyScreen3.dart';
 
 void main() {
   runApp(MyHomeScrren());
@@ -16,7 +17,7 @@ class MyHomeScrren extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyHomeScrren2(),
+      home: MyScreen3(),
     );
   }
 }
